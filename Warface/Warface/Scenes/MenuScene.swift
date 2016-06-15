@@ -9,6 +9,11 @@
 import Foundation
 import SpriteKit
 
+enum MenuSelections: String {
+	case Start = "Start"
+	case Default = "Default"
+}
+
 class MenuScene: SKScene {
 	
 	override func didMoveToView(view: SKView) {
@@ -49,13 +54,15 @@ class MenuScene: SKScene {
 		for touch in touches {
 			let node = nodeAtPoint(touch.locationInNode(self))
 			if node.name == MenuSelections.Start.rawValue {
-				print("new screen")
+				showCombatScene()
 			}
 		}
 	}
 }
 
-enum MenuSelections: String {
-	case Start = "Start"
-	case Default = "Default"
+extension MenuScene: MainMenuProtocol {
+	
+	func showCombatScene() {
+		MenuRouter.execute(view!, selection: .Start)
+	}
 }
