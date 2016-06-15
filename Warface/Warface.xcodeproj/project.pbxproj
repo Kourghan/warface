@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		615805D91D11450D00359956 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615805D81D11450D00359956 /* AppDelegate.swift */; };
-		615805DB1D11450D00359956 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 615805DA1D11450D00359956 /* GameScene.sks */; };
-		615805DD1D11450D00359956 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615805DC1D11450D00359956 /* GameScene.swift */; };
 		615805DF1D11450D00359956 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615805DE1D11450D00359956 /* GameViewController.swift */; };
 		615805E21D11450D00359956 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 615805E01D11450D00359956 /* Main.storyboard */; };
 		615805E41D11450D00359956 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 615805E31D11450D00359956 /* Assets.xcassets */; };
@@ -19,8 +17,6 @@
 /* Begin PBXFileReference section */
 		615805D51D11450D00359956 /* Warface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Warface.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		615805D81D11450D00359956 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		615805DA1D11450D00359956 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		615805DC1D11450D00359956 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		615805DE1D11450D00359956 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		615805E11D11450D00359956 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		615805E31D11450D00359956 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,16 +54,46 @@
 		615805D71D11450D00359956 /* Warface */ = {
 			isa = PBXGroup;
 			children = (
+				615805F11D11458000359956 /* Controllers */,
+				615805F01D11452F00359956 /* Extensions */,
+				615805EF1D11452A00359956 /* Scenes */,
+				615805EE1D11452100359956 /* Models */,
 				615805D81D11450D00359956 /* AppDelegate.swift */,
-				615805DA1D11450D00359956 /* GameScene.sks */,
-				615805DC1D11450D00359956 /* GameScene.swift */,
-				615805DE1D11450D00359956 /* GameViewController.swift */,
 				615805E01D11450D00359956 /* Main.storyboard */,
 				615805E31D11450D00359956 /* Assets.xcassets */,
 				615805E51D11450D00359956 /* LaunchScreen.storyboard */,
 				615805E81D11450D00359956 /* Info.plist */,
 			);
 			path = Warface;
+			sourceTree = "<group>";
+		};
+		615805EE1D11452100359956 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		615805EF1D11452A00359956 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		615805F01D11452F00359956 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		615805F11D11458000359956 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				615805DE1D11450D00359956 /* GameViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +154,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				615805DB1D11450D00359956 /* GameScene.sks in Resources */,
 				615805E71D11450D00359956 /* LaunchScreen.storyboard in Resources */,
 				615805E41D11450D00359956 /* Assets.xcassets in Resources */,
 				615805E21D11450D00359956 /* Main.storyboard in Resources */,
@@ -142,7 +167,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				615805DD1D11450D00359956 /* GameScene.swift in Sources */,
 				615805DF1D11450D00359956 /* GameViewController.swift in Sources */,
 				615805D91D11450D00359956 /* AppDelegate.swift in Sources */,
 			);
