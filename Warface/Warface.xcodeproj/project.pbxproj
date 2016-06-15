@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6113BFBE1D115D4600D59227 /* CombatHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6113BFBD1D115D4600D59227 /* CombatHex.swift */; };
+		6113BFC11D115E6600D59227 /* HexFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6113BFC01D115E6600D59227 /* HexFactory.swift */; };
 		615805D91D11450D00359956 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615805D81D11450D00359956 /* AppDelegate.swift */; };
 		615805DF1D11450D00359956 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615805DE1D11450D00359956 /* GameViewController.swift */; };
 		615805E21D11450D00359956 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 615805E01D11450D00359956 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6113BFBD1D115D4600D59227 /* CombatHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CombatHex.swift; path = Models/CombatHex.swift; sourceTree = "<group>"; };
+		6113BFC01D115E6600D59227 /* HexFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HexFactory.swift; path = Factories/HexFactory.swift; sourceTree = "<group>"; };
 		615805D51D11450D00359956 /* Warface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Warface.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		615805D81D11450D00359956 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		615805DE1D11450D00359956 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6113BFBF1D115E5200D59227 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				6113BFC01D115E6600D59227 /* HexFactory.swift */,
+			);
+			name = Factories;
+			sourceTree = "<group>";
+		};
 		615805CC1D11450D00359956 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +74,7 @@
 		615805D71D11450D00359956 /* Warface */ = {
 			isa = PBXGroup;
 			children = (
+				6113BFBF1D115E5200D59227 /* Factories */,
 				615805FB1D11509100359956 /* Protocols */,
 				615805F61D114C9700359956 /* Routers */,
 				615805F11D11458000359956 /* Controllers */,
@@ -80,6 +93,7 @@
 		615805EE1D11452100359956 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6113BFBD1D115D4600D59227 /* CombatHex.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -195,7 +209,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6113BFC11D115E6600D59227 /* HexFactory.swift in Sources */,
 				615805F51D11462500359956 /* MenuScene.swift in Sources */,
+				6113BFBE1D115D4600D59227 /* CombatHex.swift in Sources */,
 				615805F81D114CEF00359956 /* MenuRouter.swift in Sources */,
 				615805DF1D11450D00359956 /* GameViewController.swift in Sources */,
 				615805FA1D114FCC00359956 /* CombatScene.swift in Sources */,
